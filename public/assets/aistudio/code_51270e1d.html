@@ -1,0 +1,1268 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Veiga Mumtaza El Rahma · Creative Scrapbook Portfolio</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;family=Sacramento&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'fabric-blue': '#B4C3CE',
+            'fabric-blue-dark': '#9CB0BD',
+            'fabric-pink': '#D5BDC1',
+            'fabric-pink-dark': '#C5A8AD',
+            'cream-paper': '#F7F1EB',
+            'cream-paper-card': '#FAF6F1',
+            'cocoa-ink': '#5A4641',
+            'cocoa-muted': '#7D6964',
+            'ribbon-blue': '#9CB4C4',
+            'ribbon-brown': '#8A6F63',
+            'sticker-white': '#FFFFFF',
+            'card-pink': '#E9D7DA',
+            'card-blue': '#D1DDE5',
+          },
+          fontFamily: {
+            script: ['"Sacramento"', '"Great Vibes"', 'cursive'],
+            calligraphy: ['"Great Vibes"', 'cursive'],
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          boxShadow: {
+            'paper': '0 8px 24px -4px rgba(90, 70, 65, 0.16), 0 2px 6px -1px rgba(90, 70, 65, 0.1)',
+            'paper-deep': '0 18px 38px -6px rgba(90, 70, 65, 0.22), 0 4px 12px -2px rgba(90, 70, 65, 0.14)',
+            'sticker': '0 4px 14px rgba(90, 70, 65, 0.15)',
+            'polaroid': '0 10px 25px -3px rgba(90, 70, 65, 0.2)',
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Fabric Texture & Tactile Scrapbook Styles -->
+<style data-purpose="scrapbook-textures">
+    /* Subtle linen/canvas fabric weave overlay */
+    .bg-fabric-blue-pattern {
+      background-color: #B4C3CE;
+      background-image: 
+        radial-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 0),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.05) 50%, transparent 50%),
+        linear-gradient(90deg, rgba(90, 70, 65, 0.04) 50%, transparent 50%);
+      background-size: 16px 16px, 4px 4px, 4px 4px;
+    }
+
+    .bg-fabric-pink-pattern {
+      background-color: #D5BDC1;
+      background-image: 
+        radial-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 0),
+        linear-gradient(0deg, rgba(255, 255, 255, 0.06) 50%, transparent 50%),
+        linear-gradient(90deg, rgba(90, 70, 65, 0.04) 50%, transparent 50%);
+      background-size: 16px 16px, 4px 4px, 4px 4px;
+    }
+
+    .paper-texture {
+      background-color: #F7F1EB;
+      background-image: radial-gradient(rgba(90, 70, 65, 0.03) 1px, transparent 0);
+      background-size: 8px 8px;
+    }
+
+    /* Die-Cut White Sticker Outline Effect */
+    .die-cut-sticker {
+      filter: 
+        drop-shadow(0 2px 0 #FFFFFF) 
+        drop-shadow(0 -2px 0 #FFFFFF) 
+        drop-shadow(2px 0 0 #FFFFFF) 
+        drop-shadow(-2px 0 0 #FFFFFF)
+        drop-shadow(2px 2px 0 #FFFFFF)
+        drop-shadow(-2px -2px 0 #FFFFFF)
+        drop-shadow(0 6px 10px rgba(90, 70, 65, 0.22));
+    }
+
+    .die-cut-sticker-thick {
+      filter: 
+        drop-shadow(0 4px 0 #FFFFFF) 
+        drop-shadow(0 -4px 0 #FFFFFF) 
+        drop-shadow(4px 0 0 #FFFFFF) 
+        drop-shadow(-4px 0 0 #FFFFFF)
+        drop-shadow(3px 3px 0 #FFFFFF)
+        drop-shadow(-3px -3px 0 #FFFFFF)
+        drop-shadow(0 8px 14px rgba(90, 70, 65, 0.25));
+    }
+
+    /* Washi Tape Strips */
+    .washi-tape {
+      background: rgba(255, 255, 255, 0.72);
+      backdrop-filter: blur(2px);
+      box-shadow: 0 1px 4px rgba(90, 70, 65, 0.15);
+      border-left: 2px dashed rgba(90, 70, 65, 0.2);
+      border-right: 2px dashed rgba(90, 70, 65, 0.2);
+    }
+
+    .washi-tape-polka {
+      background-color: rgba(255, 255, 255, 0.8);
+      background-image: radial-gradient(#B4C3CE 20%, transparent 20%);
+      background-size: 6px 6px;
+      box-shadow: 0 2px 5px rgba(90, 70, 65, 0.14);
+    }
+
+    .washi-tape-stripes {
+      background: repeating-linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.85),
+        rgba(255, 255, 255, 0.85) 6px,
+        rgba(213, 189, 193, 0.5) 6px,
+        rgba(213, 189, 193, 0.5) 12px
+      );
+      box-shadow: 0 2px 5px rgba(90, 70, 65, 0.14);
+    }
+
+    /* Envelope triangular flaps */
+    .envelope-top-triangle {
+      width: 0;
+      height: 0;
+      border-left: 170px solid transparent;
+      border-right: 170px solid transparent;
+      border-top: 100px solid #EFE4D8;
+      filter: drop-shadow(0 4px 6px rgba(90, 70, 65, 0.08));
+    }
+
+    @media (max-width: 640px) {
+      .envelope-top-triangle {
+        border-left-width: 130px;
+        border-right-width: 130px;
+        border-top-width: 75px;
+      }
+    }
+
+    /* Scalloped Lace Edge Dividers (SVG Pattern Background) */
+    .lace-divider {
+      height: 28px;
+      width: 100%;
+      background-repeat: repeat-x;
+      background-position: center bottom;
+      background-size: 32px 28px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 28'%3E%3Cpath d='M0,28 L0,12 C4,12 6,4 16,4 C26,4 28,12 32,12 L32,28 Z' fill='%23FFFFFF' opacity='0.92'/%3E%3Ccircle cx='16' cy='12' r='2' fill='%23B4C3CE' opacity='0.5'/%3E%3Ccircle cx='8' cy='18' r='1.5' fill='%23B4C3CE' opacity='0.4'/%3E%3Ccircle cx='24' cy='18' r='1.5' fill='%23B4C3CE' opacity='0.4'/%3E%3C/svg%3E");
+    }
+
+    .lace-divider-pink {
+      height: 28px;
+      width: 100%;
+      background-repeat: repeat-x;
+      background-position: center bottom;
+      background-size: 32px 28px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 28'%3E%3Cpath d='M0,28 L0,12 C4,12 6,4 16,4 C26,4 28,12 32,12 L32,28 Z' fill='%23FFFFFF' opacity='0.92'/%3E%3Ccircle cx='16' cy='12' r='2' fill='%23D5BDC1' opacity='0.6'/%3E%3Ccircle cx='8' cy='18' r='1.5' fill='%23D5BDC1' opacity='0.5'/%3E%3Ccircle cx='24' cy='18' r='1.5' fill='%23D5BDC1' opacity='0.5'/%3E%3C/svg%3E");
+    }
+
+    /* Notebook Lined Paper effect */
+    .lined-paper {
+      background-color: #FAF6F0;
+      background-image: linear-gradient(#E8DED2 1px, transparent 1px);
+      background-size: 100% 28px;
+      line-height: 28px;
+    }
+  </style>
+<!-- END: Custom Fabric Texture & Tactile Scrapbook Styles -->
+</head>
+<body class="font-sans text-cocoa-ink antialiased selection:bg-fabric-pink selection:text-cocoa-ink overflow-x-hidden">
+<!-- BEGIN: Floating Navigation Bar -->
+<nav aria-label="Main Navigation" class="fixed top-4 left-0 right-0 z-50 flex justify-center px-4">
+<div class="bg-cream-paper/90 backdrop-blur-md border-2 border-white/80 shadow-paper rounded-full py-2 px-3 md:px-5 flex items-center justify-between gap-2 md:gap-6 text-xs md:text-sm font-semibold tracking-wide text-cocoa-ink transition-all">
+<a class="flex items-center gap-1.5 font-calligraphy text-2xl text-cocoa-ink px-2 hover:opacity-80 transition" href="#hero">
+<span>Veiga</span>
+<span class="text-xs font-sans tracking-widest text-cocoa-muted font-bold">★</span>
+</a>
+<!-- Nav links -->
+<div class="hidden lg:flex items-center gap-5">
+<a class="hover:text-ribbon-brown transition pb-0.5 border-b-2 border-transparent hover:border-ribbon-brown" href="#about">About</a>
+<a class="hover:text-ribbon-brown transition pb-0.5 border-b-2 border-transparent hover:border-ribbon-brown" href="#toc">Index</a>
+<a class="hover:text-ribbon-brown transition pb-0.5 border-b-2 border-transparent hover:border-ribbon-brown" href="#strengths">Strengths</a>
+<a class="hover:text-ribbon-brown transition pb-0.5 border-b-2 border-transparent hover:border-ribbon-brown" href="#expertise">Expertise</a>
+<a class="hover:text-ribbon-brown transition pb-0.5 border-b-2 border-transparent hover:border-ribbon-brown" href="#works">Selected Works</a>
+<a class="hover:text-ribbon-brown transition pb-0.5 border-b-2 border-transparent hover:border-ribbon-brown" href="#collaboration">Collaboration</a>
+<a class="hover:text-ribbon-brown transition pb-0.5 border-b-2 border-transparent hover:border-ribbon-brown" href="#achievements">Honors</a>
+</div>
+<!-- Action Button with Die-cut sticker feel -->
+<a class="bg-fabric-pink text-cocoa-ink border border-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider shadow-sm hover:shadow hover:bg-card-pink transition flex items-center gap-1.5" href="#contact">
+<span>Let's Talk</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</nav>
+<!-- END: Floating Navigation Bar -->
+<!-- BEGIN: Hero Section -->
+<header class="relative bg-fabric-blue-pattern min-h-screen pt-28 pb-20 px-4 flex flex-col justify-center items-center overflow-hidden" id="hero">
+<!-- Subtle Background Corner Stamp & Lace Motif -->
+<div class="absolute -top-12 -left-12 w-48 h-48 rounded-full border-4 border-dashed border-white/40 pointer-events-none"></div>
+<div class="absolute bottom-10 right-4 md:right-16 opacity-30 pointer-events-none select-none text-8xl font-script text-white">Veiga</div>
+<!-- Centered Scrapbook Envelope Display Container -->
+<div class="relative w-full max-w-2xl mx-auto mt-4 mb-8">
+<!-- LAYER 1: Tucking Elements Behind the Envelope (Tulips, Polaroids, Stickers) -->
+<!-- Left Tulip Bouquet Sticker -->
+<div class="absolute -top-24 -left-6 sm:-left-12 z-10 w-28 sm:w-44 select-none pointer-events-none transform -rotate-12 transition-transform hover:rotate-0">
+<svg class="w-full h-auto die-cut-sticker" viewBox="0 0 160 220">
+<!-- Tulips illustration -->
+<g fill="none" stroke="#5A4641" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+<!-- Stems -->
+<path d="M70,200 Q65,130 50,80" stroke="#7A9B76" stroke-width="4"></path>
+<path d="M80,200 Q80,120 85,75" stroke="#7A9B76" stroke-width="4"></path>
+<path d="M90,200 Q105,140 120,90" stroke="#7A9B76" stroke-width="4"></path>
+<!-- Leaves -->
+<path d="M70,160 Q45,135 35,110 Q55,125 68,145" fill="#8FA88C"></path>
+<path d="M88,155 Q115,130 130,105 Q110,125 86,140" fill="#8FA88C"></path>
+<!-- Tulip Bloom 1 (Left) -->
+<path d="M35,75 C25,50 35,30 50,30 C65,30 75,50 65,75 C60,85 40,85 35,75 Z" fill="#F4BAC3"></path>
+<path d="M42,75 C45,55 55,55 58,75" fill="#ECA2AF"></path>
+<!-- Tulip Bloom 2 (Center) -->
+<path d="M70,70 C60,45 70,25 85,25 C100,25 110,45 100,70 C95,80 75,80 70,70 Z" fill="#F9CBD3"></path>
+<path d="M78,70 C80,50 90,50 92,70" fill="#ECA2AF"></path>
+<!-- Tulip Bloom 3 (Right) -->
+<path d="M105,85 C95,65 105,45 120,45 C135,45 145,65 135,85 C130,95 110,95 105,85 Z" fill="#F4BAC3"></path>
+</g>
+</svg>
+</div>
+<!-- Right Tulip Bouquet Sticker -->
+<div class="absolute -top-20 -right-6 sm:-right-10 z-10 w-24 sm:w-40 select-none pointer-events-none transform rotate-12">
+<svg class="w-full h-auto die-cut-sticker" viewBox="0 0 160 220">
+<g fill="none" stroke="#5A4641" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+<path d="M85,200 Q75,130 65,85" stroke="#7A9B76" stroke-width="4"></path>
+<path d="M95,200 Q105,125 115,75" stroke="#7A9B76" stroke-width="4"></path>
+<path d="M75,150 Q50,130 40,105 Q60,120 75,135" fill="#8FA88C"></path>
+<path d="M50,80 C40,55 50,35 65,35 C80,35 90,55 80,80 C75,90 55,90 50,80 Z" fill="#F4BAC3"></path>
+<path d="M100,75 C90,50 100,30 115,30 C130,30 140,50 130,75 C125,85 105,85 100,75 Z" fill="#F9CBD3"></path>
+</g>
+</svg>
+</div>
+<!-- Tilted Polaroid Photo of Veiga (peeking from inside envelope) -->
+<div class="absolute -top-28 right-16 sm:right-28 z-10 transform rotate-6 hover:rotate-1 transition-all duration-300">
+<!-- Washi tape at top of polaroid -->
+<div class="washi-tape w-16 h-5 absolute -top-2.5 left-1/2 -translate-x-1/2 z-20 transform -rotate-3"></div>
+<div class="bg-white p-2.5 pb-7 rounded-sm shadow-paper-deep border border-stone-200">
+<div class="w-24 h-28 sm:w-32 sm:h-36 bg-fabric-pink-dark overflow-hidden rounded relative">
+<!-- Portrait Representation with aesthetic soft styling -->
+<img alt="Portrait of Veiga Mumtaza El Rahma" class="w-full h-full object-cover filter contrast-[1.05] brightness-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPR-9paf2NupVHwkgsx8fNwFpY8c-Ijmz22D2SaKkaPs6Q3v5YEmLd8Xc6klO8hYl2YvZ-OlTJ3Q6SN6YKcXEZi4u2_cRkU2eTKpziT1eYQDfp240LEOpTbULPLuJSpkmtbOyZ6Zlc_O8TWKGRIeTeBXE8Q9dVomIt03yQ_WNX1bNHrdFdf_r_bWdm8V76b-dwL3uj61SsGNJXQTolGOcrOV3x2FmBxD3oBgMi7qFoX_Ki_lKMy59f">
+</div>
+<p class="text-[9px] font-sans font-bold text-center mt-1.5 text-cocoa-muted tracking-wider">VEIGA · 2024</p>
+</div>
+</div>
+<!-- Retro Pink Camera & Postage Stamp Stickers -->
+<div class="absolute -top-12 left-24 sm:left-36 z-20 transform -rotate-6 hidden sm:block">
+<div class="bg-white p-1 rounded shadow-sticker border border-pink-100 flex items-center gap-1.5 px-2 py-1">
+<svg class="w-6 h-6 text-pink-400" fill="currentColor" viewBox="0 0 24 24">
+<path d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path>
+</svg>
+<span class="text-[9px] font-bold text-cocoa-ink tracking-tight uppercase">snap · memory</span>
+</div>
+</div>
+<!-- Vintage Paper Tag Scrap -->
+<div class="absolute -top-6 right-8 sm:right-16 z-20 washi-tape-stripes px-3 py-1 text-[10px] font-mono text-cocoa-ink uppercase tracking-widest transform rotate-12">
+        #EDISI·2026
+      </div>
+<!-- Big Die-Cut Sticker Title: "Creative Portfolio" -->
+<div class="absolute -top-24 sm:-top-28 left-4 sm:left-12 z-20 pointer-events-none select-none">
+<div class="die-cut-sticker-thick">
+<h2 class="font-calligraphy text-4xl sm:text-6xl text-cocoa-ink leading-none tracking-tight">Creative</h2>
+<h1 class="font-calligraphy text-5xl sm:text-7xl text-cocoa-ink -mt-2 sm:-mt-4 leading-none tracking-normal">Portfolio</h1>
+</div>
+</div>
+<!-- LAYER 2: The Physical Envelope Body -->
+<div class="relative z-20 bg-cream-paper rounded-2xl shadow-paper-deep border-2 border-stone-200/80 pt-16 pb-10 px-6 sm:px-12 text-center mt-14">
+<!-- Top Triangular Envelope Flap illusion -->
+<div class="absolute -top-[1px] left-1/2 transform -translate-x-1/2 flex justify-center">
+<div class="envelope-top-triangle"></div>
+</div>
+<!-- Satin Brown Ribbon Bow pinned at left corner -->
+<div class="absolute -bottom-4 -left-4 z-30 w-16 h-16 pointer-events-none">
+<svg class="w-full h-full drop-shadow-md" viewBox="0 0 80 80">
+<!-- Ribbon bow SVG -->
+<path d="M40,35 C25,15 5,30 25,42 C35,48 40,38 40,35 Z" fill="#8A6F63"></path>
+<path d="M40,35 C55,15 75,30 55,42 C45,48 40,38 40,35 Z" fill="#8A6F63"></path>
+<circle cx="40" cy="38" fill="#6A5349" r="6"></circle>
+<!-- Ribbon tails -->
+<path d="M38,40 Q25,60 18,72 Q28,68 35,55" fill="#8A6F63"></path>
+<path d="M42,40 Q55,60 62,72 Q52,68 45,55" fill="#8A6F63"></path>
+</svg>
+</div>
+<!-- Small decorative top flower stamp -->
+<div class="inline-flex items-center gap-1.5 bg-white/80 border border-stone-200 px-3 py-1 rounded-full text-xs text-cocoa-muted mb-4 shadow-sm">
+<span>✿</span>
+<span class="font-medium tracking-wide uppercase text-[10px]">Personal Portfolio &amp; Showcase</span>
+<span>✿</span>
+</div>
+<!-- Main Name in Playfair Display -->
+<h2 class="font-serif text-2xl sm:text-4xl font-bold tracking-tight text-cocoa-ink mb-2">
+          Veiga Mumtaza El Rahma
+        </h2>
+<!-- Subtitle Pill in Thai/English editorial feel -->
+<p class="inline-block bg-fabric-pink/40 border border-fabric-pink-dark/50 text-cocoa-ink text-xs sm:text-sm font-semibold tracking-wider px-4 py-1.5 rounded-full mb-6">
+          INFORMATICS STUDENT · MC &amp; SPEAKER · EVENT LEADER
+        </p>
+<!-- Brief Narrative -->
+<p class="text-xs sm:text-sm leading-relaxed text-cocoa-muted max-w-lg mx-auto mb-8 font-sans">
+          A coquette-inspired scrapbook capturing academic vigor, articulate public speaking, and meticulous event coordination. Freshman in Informatics Engineering at Institut Teknologi PLN.
+        </p>
+<!-- CTA Action Buttons -->
+<div class="flex flex-wrap items-center justify-center gap-3">
+<a class="inline-flex items-center gap-2 bg-cocoa-ink text-cream-paper px-6 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase shadow-md hover:bg-cocoa-muted transition-transform hover:-translate-y-0.5" href="#toc">
+<span>Open Table of Contents</span>
+<span>↓</span>
+</a>
+<a class="inline-flex items-center gap-2 bg-white text-cocoa-ink border border-cocoa-ink/20 px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase shadow-sm hover:bg-stone-50 transition" href="#about">
+<span>Read About Me</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Scalloped Lace Transition at Bottom of Section -->
+<div class="absolute bottom-0 left-0 right-0 lace-divider pointer-events-none"></div>
+</header>
+<!-- END: Hero Section -->
+<!-- BEGIN: Table of Contents Section -->
+<section class="relative bg-fabric-pink-pattern py-20 px-4 md:px-8" id="toc">
+<div class="max-w-4xl mx-auto">
+<!-- Script Title with Die-Cut Effect -->
+<div class="text-center mb-14">
+<h2 class="font-calligraphy text-5xl sm:text-6xl text-cocoa-ink die-cut-sticker inline-block">
+          Table of Contents
+        </h2>
+<p class="text-xs font-semibold text-cocoa-muted tracking-widest uppercase mt-2">
+          guided journey through my archives
+        </p>
+</div>
+<!-- Table of Contents Scrapbook Grid -->
+<div class="relative bg-white/40 backdrop-blur-xs border-2 border-white rounded-3xl p-6 sm:p-12 shadow-paper">
+<!-- Pinned Corner Washi Tapes -->
+<div class="washi-tape w-20 h-6 absolute -top-3 -left-3 transform -rotate-12"></div>
+<div class="washi-tape w-20 h-6 absolute -top-3 -right-3 transform rotate-12"></div>
+<div class="grid grid-cols-1 md:grid-cols-11 gap-6 items-center">
+<!-- Left Column (01 - 03) -->
+<div class="md:col-span-5 space-y-4">
+<!-- Item 01 -->
+<a class="group flex items-center justify-between sm:justify-end gap-3 p-2.5 rounded-xl hover:bg-white/60 transition" href="#about">
+<span class="font-serif text-sm sm:text-base font-bold text-cocoa-ink tracking-wider group-hover:text-cocoa-muted transition order-2 sm:order-1 text-right">
+                ABOUT ME &amp; ORIGIN
+              </span>
+<span class="w-9 h-9 rounded-lg bg-white border border-cocoa-ink/10 flex items-center justify-center font-mono text-xs font-bold text-cocoa-ink shadow-sm group-hover:scale-105 transition order-1 sm:order-2">
+                01
+              </span>
+</a>
+<!-- Item 02 -->
+<a class="group flex items-center justify-between sm:justify-end gap-3 p-2.5 rounded-xl hover:bg-white/60 transition" href="#expertise">
+<span class="font-serif text-sm sm:text-base font-bold text-cocoa-ink tracking-wider group-hover:text-cocoa-muted transition order-2 sm:order-1 text-right">
+                WHAT I CREATE
+              </span>
+<span class="w-9 h-9 rounded-lg bg-white border border-cocoa-ink/10 flex items-center justify-center font-mono text-xs font-bold text-cocoa-ink shadow-sm group-hover:scale-105 transition order-1 sm:order-2">
+                02
+              </span>
+</a>
+<!-- Item 03 -->
+<a class="group flex items-center justify-between sm:justify-end gap-3 p-2.5 rounded-xl hover:bg-white/60 transition" href="#collaboration">
+<span class="font-serif text-sm sm:text-base font-bold text-cocoa-ink tracking-wider group-hover:text-cocoa-muted transition order-2 sm:order-1 text-right">
+                COLLABORATION &amp; SERVICES
+              </span>
+<span class="w-9 h-9 rounded-lg bg-white border border-cocoa-ink/10 flex items-center justify-center font-mono text-xs font-bold text-cocoa-ink shadow-sm group-hover:scale-105 transition order-1 sm:order-2">
+                03
+              </span>
+</a>
+</div>
+<!-- Center Column: Decorative Large Dusty Blue Satin Bow -->
+<div class="md:col-span-1 flex justify-center py-2 md:py-0">
+<div class="w-20 md:w-28 flex flex-col items-center">
+<svg class="w-full h-auto drop-shadow-md" viewBox="0 0 100 160">
+<!-- Large Satin Ribbon Bow -->
+<g fill="#9CB4C4">
+<!-- Loops -->
+<path d="M50,45 C30,15 10,32 30,55 C42,65 48,50 50,45 Z" fill="#9CB4C4"></path>
+<path d="M50,45 C70,15 90,32 70,55 C58,65 52,50 50,45 Z" fill="#9CB4C4"></path>
+<!-- Knot -->
+<ellipse cx="50" cy="48" fill="#849DAE" rx="8" ry="7"></ellipse>
+<!-- Long Flowing Ribbon Tails -->
+<path d="M47,52 Q35,90 28,140 Q40,135 48,105 Z" fill="#9CB4C4"></path>
+<path d="M53,52 Q65,90 72,140 Q60,135 52,105 Z" fill="#8EA8B8"></path>
+</g>
+</svg>
+</div>
+</div>
+<!-- Right Column (04 - 06) -->
+<div class="md:col-span-5 space-y-4">
+<!-- Item 04 -->
+<a class="group flex items-center justify-start gap-3 p-2.5 rounded-xl hover:bg-white/60 transition" href="#works">
+<span class="w-9 h-9 rounded-lg bg-white border border-cocoa-ink/10 flex items-center justify-center font-mono text-xs font-bold text-cocoa-ink shadow-sm group-hover:scale-105 transition">
+                04
+              </span>
+<span class="font-serif text-sm sm:text-base font-bold text-cocoa-ink tracking-wider group-hover:text-cocoa-muted transition">
+                SELECTED WORKS &amp; RESEARCH
+              </span>
+</a>
+<!-- Item 05 -->
+<a class="group flex items-center justify-start gap-3 p-2.5 rounded-xl hover:bg-white/60 transition" href="#strengths">
+<span class="w-9 h-9 rounded-lg bg-white border border-cocoa-ink/10 flex items-center justify-center font-mono text-xs font-bold text-cocoa-ink shadow-sm group-hover:scale-105 transition">
+                05
+              </span>
+<span class="font-serif text-sm sm:text-base font-bold text-cocoa-ink tracking-wider group-hover:text-cocoa-muted transition">
+                WHAT I BRING · STRENGTHS
+              </span>
+</a>
+<!-- Item 06 -->
+<a class="group flex items-center justify-start gap-3 p-2.5 rounded-xl hover:bg-white/60 transition" href="#achievements">
+<span class="w-9 h-9 rounded-lg bg-white border border-cocoa-ink/10 flex items-center justify-center font-mono text-xs font-bold text-cocoa-ink shadow-sm group-hover:scale-105 transition">
+                06
+              </span>
+<span class="font-serif text-sm sm:text-base font-bold text-cocoa-ink tracking-wider group-hover:text-cocoa-muted transition">
+                HONORS &amp; CONTACT
+              </span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Scalloped Lace Divider -->
+<div class="absolute bottom-0 left-0 right-0 lace-divider-pink pointer-events-none"></div>
+</section>
+<!-- END: Table of Contents Section -->
+<!-- BEGIN: About Me & Education Section -->
+<section class="relative bg-fabric-blue-pattern py-20 px-4 md:px-8" id="about">
+<div class="max-w-6xl mx-auto">
+<!-- Split Card Container -->
+<div class="grid grid-cols-1 lg:grid-cols-12 rounded-3xl overflow-hidden shadow-paper-deep border-4 border-white/80">
+<!-- LEFT HALF: Warm Cream Paper Aesthetic -->
+<div class="lg:col-span-5 paper-texture p-8 sm:p-10 flex flex-col justify-between relative border-b lg:border-b-0 lg:border-r-2 border-stone-200">
+<!-- Cute Washi Tape at Top -->
+<div class="washi-tape-polka w-28 h-6 absolute -top-2 left-8 transform -rotate-2"></div>
+<div>
+<!-- Cursive Title -->
+<div class="die-cut-sticker inline-block mb-6 transform -rotate-2">
+<h2 class="font-calligraphy text-5xl text-cocoa-ink">About Me</h2>
+</div>
+<!-- Polaroid Frame of Veiga -->
+<div class="relative w-56 sm:w-64 mx-auto mb-8 transform -rotate-2 hover:rotate-0 transition duration-300">
+<!-- Ribbon on top right of polaroid -->
+<div class="absolute -top-3 -right-3 z-20 w-10 h-10 pointer-events-none">
+<svg class="w-full h-full drop-shadow" viewBox="0 0 40 40">
+<path d="M20,18 C12,8 4,16 14,22 C18,24 20,20 20,18 Z" fill="#8A6F63"></path>
+<path d="M20,18 C28,8 36,16 26,22 C22,24 20,20 20,18 Z" fill="#8A6F63"></path>
+<circle cx="20" cy="19" fill="#5A4641" r="3"></circle>
+</svg>
+</div>
+<!-- Striped Washi Tape on bottom left -->
+<div class="washi-tape-stripes w-20 h-5 absolute -bottom-2 -left-3 z-20 transform rotate-12"></div>
+<div class="bg-white p-3 pb-8 rounded shadow-polaroid border border-stone-200">
+<div class="aspect-[4/5] bg-stone-100 overflow-hidden rounded relative">
+<img alt="Veiga Mumtaza El Rahma holding flower bouquet" class="w-full h-full object-cover filter contrast-[1.03]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvfkzi4u883KxgCG7ZO3WcMgVH65um3n7PBF8KnZEMhqeWELEBtWT49GkrVQVC4Dkxnj4j35wjgy2fflkYBVUeF-SqS8cy01RE-Dizthpppz0kdzsNiow4tvHim_RlnFva-gofNxUhjcDVMMAIlDa5EDiqTKRrs15rZ7LUpl4KzBM284kMmzQABFxzwoQ6jisCOV9XM3xTRVjuigt1TimD4KnFXPDk5rLWu83LDCo">
+</div>
+<p class="font-script text-lg text-center mt-2 text-cocoa-ink">Veiga M. El Rahma ✿</p>
+</div>
+</div>
+<!-- Quick Bio Badges -->
+<div class="space-y-2 max-w-xs mx-auto text-center font-sans">
+<div class="bg-white/90 border border-stone-200 px-3 py-1.5 rounded-full text-xs font-semibold text-cocoa-ink shadow-xs">
+                📍 Bandung, 03 January 2008
+              </div>
+<div class="bg-white/90 border border-stone-200 px-3 py-1.5 rounded-full text-xs font-semibold text-cocoa-ink shadow-xs">
+                🎓 Institut Teknologi PLN · Jakarta Barat
+              </div>
+<div class="bg-white/90 border border-stone-200 px-3 py-1.5 rounded-full text-xs font-semibold text-cocoa-ink shadow-xs">
+                📖 Hafidzah 9 Juz Al-Qur'an (Al-Fath &amp; PPI)
+              </div>
+</div>
+</div>
+<!-- Bottom scrap sticker note -->
+<div class="mt-8 text-center border-t border-stone-200/60 pt-4">
+<span class="text-[11px] font-mono tracking-widest text-cocoa-muted uppercase">
+              "Dedicated, Articulate &amp; Tech-Empowered"
+            </span>
+</div>
+</div>
+<!-- RIGHT HALF: Blush Pink Fabric Aesthetic -->
+<div class="lg:col-span-7 bg-card-pink/60 p-8 sm:p-12 flex flex-col justify-between">
+<div>
+<!-- Headline & Identification -->
+<div class="mb-6">
+<span class="inline-block bg-white text-cocoa-ink border border-cocoa-ink/10 px-3 py-1 rounded-full text-[11px] font-bold tracking-widest uppercase mb-2">
+                Curriculum Vitae &amp; Profile
+              </span>
+<h3 class="font-serif text-3xl sm:text-4xl font-bold text-cocoa-ink">
+                Veiga Mumtaza El Rahma
+              </h3>
+<p class="text-sm font-medium text-cocoa-muted mt-1">
+                Informatics Engineering Student · Speaker &amp; Moderator · Organization Secretary
+              </p>
+</div>
+<!-- Narrative Paragraphs -->
+<div class="space-y-3.5 text-xs sm:text-sm text-cocoa-ink leading-relaxed font-sans">
+<p>
+                Halo! I am a passionate first-year student pursuing <strong class="font-semibold text-cocoa-ink">S1 Teknik Informatika at Institut Teknologi PLN</strong> (Jakarta Barat). My foundation combines analytical problem-solving in computing with a deep, battle-tested background in public speaking, protocol hosting, and event administration.
+              </p>
+<p>
+                Having graduated from <strong class="font-semibold text-cocoa-ink">PPI 67 Benda Tasikmalaya</strong> with honors and served as leader within the <strong class="font-semibold text-cocoa-ink">Ummahatul Ghad (Santri Putri Student Council)</strong> and <strong class="font-semibold text-cocoa-ink">Ikatan Pelajar Puteri PERSIS</strong>, I excel in coordinating large-scale institutional assemblies, crafting academic research papers, and articulating complex ideas onstage with grace.
+              </p>
+</div>
+<!-- Floating White Skill Tags -->
+<div class="mt-6">
+<h4 class="text-xs font-bold uppercase tracking-wider text-cocoa-muted mb-3">Core Competencies:</h4>
+<div class="flex flex-wrap gap-2">
+<span class="bg-white border border-stone-200 px-3 py-1 rounded-lg text-xs font-bold text-cocoa-ink shadow-xs">★ PUBLIC SPEAKING &amp; MC</span>
+<span class="bg-white border border-stone-200 px-3 py-1 rounded-lg text-xs font-bold text-cocoa-ink shadow-xs">★ EVENT COORDINATION</span>
+<span class="bg-white border border-stone-200 px-3 py-1 rounded-lg text-xs font-bold text-cocoa-ink shadow-xs">★ SECRETARIAT &amp; DOCS</span>
+<span class="bg-white border border-stone-200 px-3 py-1 rounded-lg text-xs font-bold text-cocoa-ink shadow-xs">★ CANVA &amp; MS OFFICE</span>
+<span class="bg-white border border-stone-200 px-3 py-1 rounded-lg text-xs font-bold text-cocoa-ink shadow-xs">★ BIANTARA SUNDANESE SPEECH</span>
+<span class="bg-white border border-stone-200 px-3 py-1 rounded-lg text-xs font-bold text-cocoa-ink shadow-xs">★ PYTHON &amp; WEB BASICS</span>
+</div>
+</div>
+<!-- Structured Timeline: Education & Key Roles -->
+<div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Education Card -->
+<div class="bg-cream-paper p-4 rounded-xl border border-stone-200/80 shadow-xs">
+<span class="text-[10px] font-mono font-bold text-cocoa-muted uppercase tracking-wider">Education</span>
+<h5 class="font-serif font-bold text-sm text-cocoa-ink mt-1">Institut Teknologi PLN</h5>
+<p class="text-xs text-cocoa-muted">S1 Teknik Informatika (2025 – Present)</p>
+<div class="mt-2 pt-2 border-t border-stone-200 text-xs">
+<span class="font-medium text-cocoa-ink">PPI 67 Benda Tasikmalaya</span>
+<p class="text-[11px] text-cocoa-muted">Madrasah Aliyah (Graduated 2024)</p>
+</div>
+</div>
+<!-- Organizations Card -->
+<div class="bg-cream-paper p-4 rounded-xl border border-stone-200/80 shadow-xs">
+<span class="text-[10px] font-mono font-bold text-cocoa-muted uppercase tracking-wider">Leadership</span>
+<h5 class="font-serif font-bold text-sm text-cocoa-ink mt-1">Ummahatul Ghad (OSIS)</h5>
+<p class="text-xs text-cocoa-muted">Ketua Bagian &amp; Sekretaris Umum</p>
+<div class="mt-2 pt-2 border-t border-stone-200 text-xs">
+<span class="font-medium text-cocoa-ink">IPPI PERSIS Tasikmalaya</span>
+<p class="text-[11px] text-cocoa-muted">Koordinator Bidang Pendidikan &amp; Kaderisasi</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Footnote note -->
+<div class="mt-8 flex items-center justify-between text-xs text-cocoa-muted border-t border-white/60 pt-3">
+<span>Ready for dynamic challenges</span>
+<span>✦ Jakarta &amp; Bandung</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Scalloped Lace Divider -->
+<div class="absolute bottom-0 left-0 right-0 lace-divider pointer-events-none"></div>
+</section>
+<!-- END: About Me & Education Section -->
+<!-- BEGIN: What I Bring / Core Strengths Section -->
+<section class="relative bg-fabric-blue-pattern py-20 px-4 md:px-8" id="strengths">
+<div class="max-w-5xl mx-auto">
+<!-- Section Header with Script and Flanking Bows -->
+<div class="text-center mb-14">
+<div class="inline-flex items-center justify-center gap-4">
+<!-- Left Dusty Blue Bow -->
+<div class="w-10 h-10 hidden sm:block">
+<svg class="w-full h-full drop-shadow" viewBox="0 0 50 50">
+<path d="M25,22 C14,8 4,18 16,28 C22,30 25,25 25,22 Z" fill="#9CB4C4"></path>
+<path d="M25,22 C36,8 46,18 34,28 C28,30 25,25 25,22 Z" fill="#9CB4C4"></path>
+<circle cx="25" cy="23" fill="#7E9AA8" r="4"></circle>
+<path d="M23,26 Q16,42 12,48" stroke="#9CB4C4" stroke-linecap="round" stroke-width="3"></path>
+<path d="M27,26 Q34,42 38,48" stroke="#8EA8B8" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+</div>
+<h2 class="font-calligraphy text-5xl sm:text-6xl text-cocoa-ink die-cut-sticker inline-block px-2">
+            What i Bring
+          </h2>
+<!-- Right Dusty Blue Bow -->
+<div class="w-10 h-10 hidden sm:block">
+<svg class="w-full h-full drop-shadow" viewBox="0 0 50 50">
+<path d="M25,22 C14,8 4,18 16,28 C22,30 25,25 25,22 Z" fill="#9CB4C4"></path>
+<path d="M25,22 C36,8 46,18 34,28 C28,30 25,25 25,22 Z" fill="#9CB4C4"></path>
+<circle cx="25" cy="23" fill="#7E9AA8" r="4"></circle>
+<path d="M23,26 Q16,42 12,48" stroke="#9CB4C4" stroke-linecap="round" stroke-width="3"></path>
+<path d="M27,26 Q34,42 38,48" stroke="#8EA8B8" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+</div>
+</div>
+<p class="text-xs font-semibold text-cocoa-muted tracking-widest uppercase mt-2">
+          Distinct value pillars crafted through leadership &amp; STEM education
+        </p>
+</div>
+<!-- 2x2 Grid of Blush Pink Cards Matching Reference Image -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+<!-- Card 1: Articulate Public Speaker -->
+<div class="bg-card-pink rounded-2xl p-6 sm:p-7 border border-white/60 shadow-paper relative transition duration-300 hover:-translate-y-1">
+<!-- Washi tape at top -->
+<div class="washi-tape-stripes w-20 h-5 absolute -top-2.5 left-8 transform -rotate-1"></div>
+<div class="inline-block bg-white border border-stone-200 px-3 py-1 rounded-md mb-3 shadow-xs">
+<h3 class="font-mono text-xs font-bold tracking-wider text-cocoa-ink uppercase">
+              ARTICULATE PUBLIC SPEAKER
+            </h3>
+</div>
+<p class="text-xs sm:text-sm text-cocoa-ink leading-relaxed">
+            Confidence on the microphone in formal Indonesian, Arabic, English, and Sundanese. Experienced Master of Ceremonies (MC) for graduation ceremonies, academic talkshows, and youth competitions with pristine pacing and crowd command.
+          </p>
+<div class="mt-4 pt-3 border-t border-cocoa-ink/10 flex items-center justify-between text-[11px] font-semibold text-cocoa-muted">
+<span>🎤 Formal &amp; Semi-Formal Events</span>
+<span>Biantara Finalist</span>
+</div>
+</div>
+<!-- Card 2: Structured Event Leader -->
+<div class="bg-card-pink rounded-2xl p-6 sm:p-7 border border-white/60 shadow-paper relative transition duration-300 hover:-translate-y-1">
+<!-- Washi tape at top -->
+<div class="washi-tape w-20 h-5 absolute -top-2.5 right-8 transform rotate-2"></div>
+<div class="inline-block bg-white border border-stone-200 px-3 py-1 rounded-md mb-3 shadow-xs">
+<h3 class="font-mono text-xs font-bold tracking-wider text-cocoa-ink uppercase">
+              STRUCTURED EVENT LEADER
+            </h3>
+</div>
+<p class="text-xs sm:text-sm text-cocoa-ink leading-relaxed">
+            Proven track record in 12+ committee roles across pesantren and regional youth organizations. Proven expertise in rundown coordination, administrative correspondence, speaker liaisons, and crisis mitigation in real-time execution.
+          </p>
+<div class="mt-4 pt-3 border-t border-cocoa-ink/10 flex items-center justify-between text-[11px] font-semibold text-cocoa-muted">
+<span>📋 12+ Major Events Managed</span>
+<span>Secretariat &amp; Logistics</span>
+</div>
+</div>
+<!-- Card 3: Analytical & Tech-Driven -->
+<div class="bg-card-pink rounded-2xl p-6 sm:p-7 border border-white/60 shadow-paper relative transition duration-300 hover:-translate-y-1">
+<div class="washi-tape w-20 h-5 absolute -top-2.5 left-8 transform rotate-1"></div>
+<div class="inline-block bg-white border border-stone-200 px-3 py-1 rounded-md mb-3 shadow-xs">
+<h3 class="font-mono text-xs font-bold tracking-wider text-cocoa-ink uppercase">
+              ANALYTICAL &amp; TECH-DRIVEN
+            </h3>
+</div>
+<p class="text-xs sm:text-sm text-cocoa-ink leading-relaxed">
+            Informatics Engineering foundation backed by 4x National Science Olympiad medals in Chemistry, Biology, and Mathematics. Combines logical problem solving, data structuring, and rapid technical adaptability for future digital systems.
+          </p>
+<div class="mt-4 pt-3 border-t border-cocoa-ink/10 flex items-center justify-between text-[11px] font-semibold text-cocoa-muted">
+<span>🏅 4x Science Olympiad Medals</span>
+<span>Algorithmic Thinking</span>
+</div>
+</div>
+<!-- Card 4: Adaptable & Collaborative -->
+<div class="bg-card-pink rounded-2xl p-6 sm:p-7 border border-white/60 shadow-paper relative transition duration-300 hover:-translate-y-1">
+<div class="washi-tape-stripes w-20 h-5 absolute -top-2.5 right-8 transform -rotate-2"></div>
+<div class="inline-block bg-white border border-stone-200 px-3 py-1 rounded-md mb-3 shadow-xs">
+<h3 class="font-mono text-xs font-bold tracking-wider text-cocoa-ink uppercase">
+              AUTHENTIC &amp; DILIGENT
+            </h3>
+</div>
+<p class="text-xs sm:text-sm text-cocoa-ink leading-relaxed">
+            Nurtured in Islamic boarding school disciplines (hafizhah 9 juz) with strong moral integrity, empathy, and collaborative spirit. Capable of bridging technical programmers, creative teams, and executive stakeholders effortlessly.
+          </p>
+<div class="mt-4 pt-3 border-t border-cocoa-ink/10 flex items-center justify-between text-[11px] font-semibold text-cocoa-muted">
+<span>🤝 Cross-Functional Synergy</span>
+<span>Growth Mindset</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Scalloped Lace Divider -->
+<div class="absolute bottom-0 left-0 right-0 lace-divider pointer-events-none"></div>
+</section>
+<!-- END: What I Bring / Core Strengths Section -->
+<!-- BEGIN: What I Create / Expertise Section -->
+<section class="relative bg-fabric-blue-pattern py-20 px-4 md:px-8" id="expertise">
+<div class="max-w-5xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Left: Envelope & Flower Collage Visual -->
+<div class="lg:col-span-5 relative flex justify-center">
+<div class="relative w-64 sm:w-72">
+<!-- White die-cut title layered over envelope -->
+<div class="die-cut-sticker-thick absolute -top-12 -left-4 z-30">
+<h3 class="font-calligraphy text-4xl sm:text-5xl text-cocoa-ink leading-tight">What i</h3>
+<h3 class="font-calligraphy text-5xl sm:text-6xl text-cocoa-ink -mt-3">Create</h3>
+</div>
+<!-- Peeking tulips on right of envelope -->
+<div class="absolute -top-10 -right-6 z-10 w-24">
+<svg class="w-full h-auto die-cut-sticker" viewBox="0 0 100 130">
+<path d="M50,120 Q50,70 60,35" fill="none" stroke="#7A9B76" stroke-width="3"></path>
+<path d="M45,45 C35,25 45,10 60,10 C75,10 85,25 75,45 C70,55 50,55 45,45 Z" fill="#F4BAC3"></path>
+</svg>
+</div>
+<!-- Realistic Paper Envelope Graphic -->
+<div class="bg-cream-paper rounded-xl p-6 pt-16 shadow-paper-deep border border-stone-200 relative z-20">
+<!-- Envelope flap tip -->
+<div class="w-0 h-0 border-l-[110px] border-l-transparent border-r-[110px] border-r-transparent border-t-[60px] border-t-[#EADCCF] absolute -top-[1px] left-1/2 -translate-x-1/2"></div>
+<!-- Retro Pink Camera Sticker -->
+<div class="bg-pink-100/90 border border-pink-200 p-2 rounded-lg text-center mt-2 shadow-sm">
+<svg class="w-8 h-8 text-pink-400 mx-auto" fill="currentColor" viewBox="0 0 24 24">
+<path d="M4 4h3l2-2h6l2 2h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm8 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"></path>
+</svg>
+<span class="text-[10px] font-bold text-cocoa-ink tracking-wider block mt-1">PORTFOLIO SNAPS</span>
+</div>
+<!-- Pinned Washi Tape -->
+<div class="washi-tape-stripes w-28 h-5 mx-auto -mb-9 mt-4 transform -rotate-3 z-30"></div>
+</div>
+</div>
+</div>
+<!-- Right: 3 Structured Rows Matching Reference -->
+<div class="lg:col-span-7 space-y-5">
+<!-- Row 1: STAGE & MC -->
+<div class="flex flex-col sm:flex-row items-stretch gap-3">
+<div class="w-full sm:w-36 bg-fabric-blue-dark/50 border border-white px-3 py-3 rounded-xl flex items-center justify-center text-center shadow-xs">
+<span class="font-mono text-xs font-bold uppercase tracking-wider text-cocoa-ink">
+                STAGE &amp; MC
+              </span>
+</div>
+<div class="flex-1 bg-cream-paper p-4 rounded-xl border border-stone-200 shadow-xs">
+<p class="text-xs sm:text-sm text-cocoa-ink leading-relaxed">
+                Hosting formal assemblies, graduation processions, national webinar series, and debate tournaments with articulate bilingual cue sheets and stage composure.
+              </p>
+</div>
+</div>
+<!-- Row 2: EVENT & OPS -->
+<div class="flex flex-col sm:flex-row items-stretch gap-3">
+<div class="w-full sm:w-36 bg-fabric-blue-dark/50 border border-white px-3 py-3 rounded-xl flex items-center justify-center text-center shadow-xs">
+<span class="font-mono text-xs font-bold uppercase tracking-wider text-cocoa-ink">
+                EVENT &amp; OPS
+              </span>
+</div>
+<div class="flex-1 bg-cream-paper p-4 rounded-xl border border-stone-200 shadow-xs">
+<p class="text-xs sm:text-sm text-cocoa-ink leading-relaxed">
+                Comprehensive rundown scheduling, protocol flow mapping, guest coordination, and committee operational governance for institutional events.
+              </p>
+</div>
+</div>
+<!-- Row 3: RESEARCH & DOCS -->
+<div class="flex flex-col sm:flex-row items-stretch gap-3">
+<div class="w-full sm:w-36 bg-fabric-blue-dark/50 border border-white px-3 py-3 rounded-xl flex items-center justify-center text-center shadow-xs">
+<span class="font-mono text-xs font-bold uppercase tracking-wider text-cocoa-ink">
+                RESEARCH &amp; DOCS
+              </span>
+</div>
+<div class="flex-1 bg-cream-paper p-4 rounded-xl border border-stone-200 shadow-xs">
+<p class="text-xs sm:text-sm text-cocoa-ink leading-relaxed">
+                Rigorous Hadith methodology research (Takhrij), academic writing, and publication-ready slide decks designed in Canva and structured in MS Word.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Scalloped Lace Divider -->
+<div class="absolute bottom-0 left-0 right-0 lace-divider pointer-events-none"></div>
+</section>
+<!-- END: What I Create / Expertise Section -->
+<!-- BEGIN: Selected Works & Research Section -->
+<section class="relative bg-fabric-pink-pattern py-20 px-4 md:px-8" id="works">
+<div class="max-w-6xl mx-auto space-y-16">
+<!-- BLOCK 1: Academic & Speaking Selected Works -->
+<div class="relative bg-white/40 backdrop-blur-xs border-2 border-white rounded-3xl p-6 sm:p-10 shadow-paper">
+<!-- Top Number Sticker Tag & Script Title -->
+<div class="flex items-center gap-3 mb-8">
+<div class="w-9 h-9 rounded bg-white shadow-sm border border-stone-200 flex items-center justify-center font-mono font-bold text-sm text-cocoa-ink">
+            1.
+          </div>
+<h2 class="font-calligraphy text-4xl sm:text-5xl text-cocoa-ink die-cut-sticker">
+            Selected Works
+          </h2>
+<span class="ml-auto text-xs font-mono text-cocoa-muted tracking-widest uppercase hidden sm:inline-block">
+            ACADEMIC &amp; ORATORY
+          </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Description Side -->
+<div class="lg:col-span-5 space-y-4">
+<h3 class="font-serif text-xl sm:text-2xl font-bold text-cocoa-ink">
+              Takhrij Hadits Research: Konsep 'Yusr' (Kemudahan) dalam Syariat
+            </h3>
+<p class="text-xs sm:text-sm text-cocoa-ink leading-relaxed">
+              An exhaustive academic paper examining the Sanad and Matan of the prophetic narration on facilitation in Islamic law. Conducted utilizing primary classical hadith encyclopedias, cross-referencing narrator credibility (Ilm al-Rijal), and thematic contemporary applications.
+            </p>
+<div class="bg-cream-paper p-4 rounded-xl border border-stone-200 space-y-2 text-xs">
+<div class="flex items-center justify-between">
+<span class="font-bold text-cocoa-ink">Methodology:</span>
+<span class="text-cocoa-muted font-mono">Takhrij al-Hadith bi al-Lafz</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-bold text-cocoa-ink">Institution:</span>
+<span class="text-cocoa-muted">PPI 67 Benda Tasikmalaya</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-bold text-cocoa-ink">Status:</span>
+<span class="text-green-800 font-semibold bg-green-100 px-2 py-0.5 rounded">Munaqasyah A (Distinction)</span>
+</div>
+</div>
+<!-- Speech Mentorship sub-note -->
+<div class="pt-2">
+<span class="inline-block bg-white border border-stone-200 px-3 py-1 rounded-full text-xs font-semibold text-cocoa-ink shadow-xs">
+                ✦ Biantara Sunda Mentorship &amp; Finalist 2024
+              </span>
+</div>
+</div>
+<!-- Dual Device / Paper Mockup Side pinned with washi tape -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Mockup Card 1 -->
+<div class="relative bg-white rounded-2xl p-3 shadow-paper-deep border border-stone-200 transform -rotate-1 hover:rotate-0 transition">
+<div class="washi-tape-stripes w-16 h-5 absolute -top-2 left-1/2 -translate-x-1/2 z-20"></div>
+<div class="aspect-[9/16] bg-stone-100 rounded-xl overflow-hidden relative border border-stone-100">
+<img alt="Hadith research documents and methodology notebooks" class="w-full h-full object-cover filter contrast-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTZrg-CqWFqET1kx0DSKizL3rihbbvML-vHoPifkjEmkdGzc2HmiIUZzxtw0n012zrpE1LXrmCaMSaijdUvDd0gGFwDlxYGReOTvWqbGzq2g6YaCPiEeDyqHM8qAlD4TD50xygord65GpKMINjAFYegISdaQ2oJQRI7Fn7xvp5pV8ytmmydJMmwnkzCoGU3sb8duA6MAcuBWAoV47vSrfFcNdY07mpHAEgjB7svFA">
+<div class="absolute inset-0 bg-gradient-to-t from-cocoa-ink/70 via-transparent to-transparent flex items-end p-4">
+<p class="text-white text-xs font-semibold">Takhrij Paper Documentation</p>
+</div>
+</div>
+<p class="text-center font-mono text-[10px] text-cocoa-muted uppercase mt-2">RESEARCH MANUSCRIPT</p>
+</div>
+<!-- Mockup Card 2 -->
+<div class="relative bg-white rounded-2xl p-3 shadow-paper-deep border border-stone-200 transform rotate-1 hover:rotate-0 transition">
+<div class="washi-tape w-16 h-5 absolute -top-2 left-1/2 -translate-x-1/2 z-20"></div>
+<div class="aspect-[9/16] bg-stone-100 rounded-xl overflow-hidden relative border border-stone-100">
+<img alt="Public speaking and podium presentation" class="w-full h-full object-cover filter contrast-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlyqqgCSy0b_dL6p8BlQKz6_NJulOg_6wYDI4dMe8gKqJSSfMBqWtBKby0h8YHTRnDZf81IbhB4-Vc9XyUYSDSqfcdQDbwtsgnJfAPM03Gp8WdkOM4ISb2tsdhcH1LhzOKaYUsC9KOdwSKNCbExYBdeOozzuHIwn5j7JlE0AsfcvJ9rnrEehnyhhccBMq6k-5FqKyxICHssU5EUiCWzaWxv8kd9JO0v4e8hiTLyJw">
+<div class="absolute inset-0 bg-gradient-to-t from-cocoa-ink/70 via-transparent to-transparent flex items-end p-4">
+<p class="text-white text-xs font-semibold">Stage Oratory &amp; Mentorship</p>
+</div>
+</div>
+<p class="text-center font-mono text-[10px] text-cocoa-muted uppercase mt-2">ORATORY REPERTOIRE</p>
+</div>
+</div>
+</div>
+</div>
+<!-- BLOCK 2: Event Leadership Journey -->
+<div class="relative bg-white/40 backdrop-blur-xs border-2 border-white rounded-3xl p-6 sm:p-10 shadow-paper">
+<!-- Top Number Sticker Tag & Script Title -->
+<div class="flex items-center gap-3 mb-8">
+<div class="w-9 h-9 rounded bg-white shadow-sm border border-stone-200 flex items-center justify-center font-mono font-bold text-sm text-cocoa-ink">
+            2.
+          </div>
+<h2 class="font-calligraphy text-4xl sm:text-5xl text-cocoa-ink die-cut-sticker">
+            Event Journey
+          </h2>
+<span class="ml-auto text-xs font-mono text-cocoa-muted tracking-widest uppercase hidden sm:inline-block">
+            LEADERSHIP IN ACTION
+          </span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+<!-- Dual Phone/Mockup Frames matching reference image 2 -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 order-2 lg:order-1">
+<!-- Mockup 1: Candidate Election Committee -->
+<div class="relative bg-white rounded-2xl p-3 shadow-paper-deep border border-stone-200 transform rotate-1 hover:rotate-0 transition">
+<div class="washi-tape-stripes w-16 h-5 absolute -top-2 left-1/2 -translate-x-1/2 z-20"></div>
+<div class="aspect-[9/16] bg-stone-100 rounded-xl overflow-hidden relative border border-stone-100">
+<img alt="Student council candidate assembly and election" class="w-full h-full object-cover filter contrast-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvTDZbGyS0wlzEQiLF8lCmmqcJgUt7wJRCEGqlq5bA4cVz3Fc-Fy-WVya17q_yrw7VTeaj2yUBkMuz12ERlXTUZBEnJz_uW4GgkGYzvqGcLOHRtAFFNwRXgbWOJ8ikjqUj2r6-z8toR_mQBoyZaZj1hxkjqPQ65i_fNsX7UYRvTA-YSDN-7R7Dg3FEm1A5Nab6XSiIAPDXtTOFqu_HsJiM_SVIKWCEAsKDSEy6q9o">
+<div class="absolute inset-0 bg-gradient-to-t from-cocoa-ink/70 via-transparent to-transparent flex items-end p-4">
+<p class="text-white text-xs font-semibold">Musybar &amp; Candidate Assemblies</p>
+</div>
+</div>
+<p class="text-center font-mono text-[10px] text-cocoa-muted uppercase mt-2">PPI 67 BENDA COMMITTEES</p>
+</div>
+<!-- Mockup 2: Regional Youth Conference -->
+<div class="relative bg-white rounded-2xl p-3 shadow-paper-deep border border-stone-200 transform -rotate-1 hover:rotate-0 transition">
+<div class="washi-tape w-16 h-5 absolute -top-2 left-1/2 -translate-x-1/2 z-20"></div>
+<div class="aspect-[9/16] bg-stone-100 rounded-xl overflow-hidden relative border border-stone-100">
+<img alt="Youth delegation conference and coordination meeting" class="w-full h-full object-cover filter contrast-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLa6KXFg5d9-dg3tngND-280ZJSwxKzZGnHQZp3w7O0GIxAcmEb393a3BENCKXoilJC_Ud8DHRlvbzMmpMpfwTNV_eX0RFf6IPaKfcRjxlmJU5ZQ2JwJoUvDic4urIFNukui7pGdQCxuTZ1h7NbhCI1bA9EoWVqYwTPve31fsScJZYtGarDI1WOzZDzWBlrHv4xkPxXMwuIoEyA3S3hBNXCNDTU9K0HdDQuL-6ZeE">
+<div class="absolute inset-0 bg-gradient-to-t from-cocoa-ink/70 via-transparent to-transparent flex items-end p-4">
+<p class="text-white text-xs font-semibold">Musyda IPPI &amp; Regional Conferences</p>
+</div>
+</div>
+<p class="text-center font-mono text-[10px] text-cocoa-muted uppercase mt-2">IPPI PERSIS SQUAD</p>
+</div>
+</div>
+<!-- Description Side -->
+<div class="lg:col-span-5 space-y-4 order-1 lg:order-2">
+<h3 class="font-serif text-xl sm:text-2xl font-bold text-cocoa-ink">
+              Multi-Tiered Committee Leadership Portfolio
+            </h3>
+<p class="text-xs sm:text-sm text-cocoa-ink leading-relaxed">
+              Orchestrating high-stakes assemblies with clarity, diplomacy, and administrative precision. Key committee roles held include:
+            </p>
+<ul class="space-y-2 text-xs text-cocoa-ink font-sans">
+<li class="flex items-start gap-2 bg-cream-paper p-2.5 rounded-lg border border-stone-200">
+<span class="text-ribbon-brown font-bold mt-0.5">✦</span>
+<div>
+<strong class="font-semibold text-cocoa-ink">Sekretaris Acara:</strong> Kandidatan PPI 67 Benda (2023) — Responsible for general secretarial decree, voting ballots, and live count recaps.
+                </div>
+</li>
+<li class="flex items-start gap-2 bg-cream-paper p-2.5 rounded-lg border border-stone-200">
+<span class="text-ribbon-brown font-bold mt-0.5">✦</span>
+<div>
+<strong class="font-semibold text-cocoa-ink">Koor. Keamanan:</strong> Musyawarah Besar PPI 67 Benda (2024) — Coordinated crowd control and protocol compliance for 500+ attendees.
+                </div>
+</li>
+<li class="flex items-start gap-2 bg-cream-paper p-2.5 rounded-lg border border-stone-200">
+<span class="text-ribbon-brown font-bold mt-0.5">✦</span>
+<div>
+<strong class="font-semibold text-cocoa-ink">Sie. Pendidikan:</strong> Khidmat Jam'iyyah PPI 67 Benda (2024) — Designed community education curriculum and field teaching modules.
+                </div>
+</li>
+<li class="flex items-start gap-2 bg-cream-paper p-2.5 rounded-lg border border-stone-200">
+<span class="text-ribbon-brown font-bold mt-0.5">✦</span>
+<div>
+<strong class="font-semibold text-cocoa-ink">Sie. Dekorasi &amp; Logistik:</strong> Musyawarah Daerah IPPI Kota Tasikmalaya (2024) — Managed visual spatial setup and stage aesthetics.
+                </div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Scalloped Lace Divider -->
+<div class="absolute bottom-0 left-0 right-0 lace-divider-pink pointer-events-none"></div>
+</section>
+<!-- END: Selected Works & Research Section -->
+<!-- BEGIN: Collaboration / Work With Me Section -->
+<section class="relative bg-fabric-blue-pattern py-20 px-4 md:px-8" id="collaboration">
+<div class="max-w-4xl mx-auto">
+<!-- Script Title -->
+<div class="text-center mb-12">
+<h2 class="font-calligraphy text-5xl sm:text-6xl text-cocoa-ink die-cut-sticker inline-block">
+          Collaboration Offerings
+        </h2>
+<p class="text-xs font-semibold text-cocoa-muted tracking-widest uppercase mt-2">
+          how we can create meaningful impact together
+        </p>
+</div>
+<!-- Realistic File Folder Visual Representation -->
+<div class="relative">
+<!-- Folder Tab Behind Paper -->
+<div class="w-48 h-10 bg-fabric-blue-dark rounded-t-2xl border-t-2 border-l-2 border-r-2 border-white/80 ml-6 -mb-1 flex items-center px-4 shadow-sm">
+<span class="font-mono text-xs font-bold text-white tracking-wider">COLLAB_SERVICES.DOC</span>
+</div>
+<!-- Main Lined Paper Sheet Inside Folder -->
+<div class="lined-paper rounded-2xl p-6 sm:p-12 shadow-paper-deep border-2 border-stone-300 relative">
+<!-- Cocoa Brown Satin Ribbon Bow pinned at top center of folder -->
+<div class="absolute -top-5 left-1/2 -translate-x-1/2 z-20 w-14 h-14 pointer-events-none">
+<svg class="w-full h-full drop-shadow" viewBox="0 0 60 60">
+<path d="M30,26 C18,10 6,22 20,32 C27,35 30,30 30,26 Z" fill="#8A6F63"></path>
+<path d="M30,26 C42,10 54,22 40,32 C33,35 30,30 30,26 Z" fill="#8A6F63"></path>
+<circle cx="30" cy="28" fill="#6A5349" r="5"></circle>
+<path d="M28,32 Q20,50 14,56" stroke="#8A6F63" stroke-linecap="round" stroke-width="3"></path>
+<path d="M32,32 Q40,50 46,56" stroke="#755D53" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+</div>
+<!-- Realistic Fountain Pen Illustration Illustration on top right -->
+<div class="absolute -top-6 right-6 sm:right-12 z-20 w-36 sm:w-44 pointer-events-none hidden sm:block transform rotate-12">
+<svg class="w-full h-auto drop-shadow-md" viewBox="0 0 200 40">
+<rect fill="#2E2E2E" height="12" rx="3" width="130" x="20" y="14"></rect>
+<rect fill="#C9A66B" height="14" width="12" x="70" y="13"></rect>
+<path d="M150,14 L180,20 L150,26 Z" fill="#C9A66B"></path>
+<line stroke="#1A1A1A" stroke-width="1.5" x1="170" x2="188" y1="20" y2="20"></line>
+</svg>
+</div>
+<!-- Document Header -->
+<div class="border-b-2 border-cocoa-ink/15 pb-4 mb-6 pt-2">
+<h3 class="font-serif text-2xl sm:text-3xl font-bold italic text-cocoa-ink">
+              Service Packages &amp; Engagements
+            </h3>
+<p class="text-xs text-cocoa-muted font-sans mt-1">
+              Available for academic, institutional, and student organization partnerships in 2026.
+            </p>
+</div>
+<!-- 3 Service Rows -->
+<div class="space-y-6">
+<!-- Row 1: MC & Moderation -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-4 border-b border-stone-200">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="bg-card-pink text-cocoa-ink font-mono font-bold text-xs px-2.5 py-0.5 rounded-full border border-pink-200">
+                    PACKAGE 01
+                  </span>
+<h4 class="font-serif font-bold text-base text-cocoa-ink">Master of Ceremony &amp; Moderation</h4>
+</div>
+<p class="text-xs text-cocoa-muted font-sans max-w-xl">
+                  Leading formal ceremonies, academic symposiums, guest speaker talk shows, and youth festivals with custom cue card scripting and punctuality.
+                </p>
+</div>
+<span class="text-xs font-bold font-mono text-cocoa-ink bg-white px-3 py-1.5 rounded-lg border border-stone-200 shadow-xs whitespace-nowrap">
+                Event-Based
+              </span>
+</div>
+<!-- Row 2: Event Committee & Concept -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pb-4 border-b border-stone-200">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="bg-card-blue text-cocoa-ink font-mono font-bold text-xs px-2.5 py-0.5 rounded-full border border-blue-200">
+                    PACKAGE 02
+                  </span>
+<h4 class="font-serif font-bold text-base text-cocoa-ink">Event Advisory &amp; Operations</h4>
+</div>
+<p class="text-xs text-cocoa-muted font-sans max-w-xl">
+                  Rundown formulation, stage protocol consulting, secretariat workflow design, and operational briefing for student union committees.
+                </p>
+</div>
+<span class="text-xs font-bold font-mono text-cocoa-ink bg-white px-3 py-1.5 rounded-lg border border-stone-200 shadow-xs whitespace-nowrap">
+                Project-Based
+              </span>
+</div>
+<!-- Row 3: Design, Research & Administration -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+<div class="space-y-1">
+<div class="flex items-center gap-2">
+<span class="bg-stone-200 text-cocoa-ink font-mono font-bold text-xs px-2.5 py-0.5 rounded-full border border-stone-300">
+                    PACKAGE 03
+                  </span>
+<h4 class="font-serif font-bold text-base text-cocoa-ink">Decks, Reports &amp; Copywriting</h4>
+</div>
+<p class="text-xs text-cocoa-muted font-sans max-w-xl">
+                  Professional Canva presentation design, institutional accountability reports (LPJ), academic summaries, and Sundanese/Indonesian speech drafting.
+                </p>
+</div>
+<span class="text-xs font-bold font-mono text-cocoa-ink bg-white px-3 py-1.5 rounded-lg border border-stone-200 shadow-xs whitespace-nowrap">
+                Custom Scope
+              </span>
+</div>
+</div>
+<!-- Bottom Signature / Seal -->
+<div class="mt-8 pt-6 border-t-2 border-dashed border-stone-300 flex flex-wrap items-center justify-between text-xs text-cocoa-muted">
+<span class="font-script text-2xl text-cocoa-ink">Veiga Mumtaza E. R.</span>
+<span class="font-mono text-[11px] uppercase tracking-wider">INSTITUT TEKNOLOGI PLN · JAKARTA</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Scalloped Lace Divider -->
+<div class="absolute bottom-0 left-0 right-0 lace-divider pointer-events-none"></div>
+</section>
+<!-- END: Collaboration / Work With Me Section -->
+<!-- BEGIN: Honors & Achievements Section -->
+<section class="relative bg-fabric-pink-pattern py-20 px-4 md:px-8" id="achievements">
+<div class="max-w-5xl mx-auto">
+<!-- Script Title with Note -->
+<div class="text-center mb-12">
+<h2 class="font-calligraphy text-5xl sm:text-6xl text-cocoa-ink die-cut-sticker inline-block">
+          Honors &amp; Achievements
+        </h2>
+<div class="mt-2 flex items-center justify-center gap-2">
+<span class="font-script text-xl text-cocoa-muted">alhamdulillah ✦</span>
+<span class="text-xs font-semibold text-cocoa-muted tracking-widest uppercase">milestones across stem &amp; arts</span>
+</div>
+</div>
+<!-- Grid of Index Cards pinned with washi tapes -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Achievement 1: Tahfidz Milestone -->
+<div class="relative bg-cream-paper rounded-xl p-5 shadow-paper border border-stone-200 transform -rotate-1 hover:rotate-0 transition">
+<div class="washi-tape-stripes w-16 h-4 absolute -top-2 left-8"></div>
+<span class="text-2xl mb-2 block">📖</span>
+<h4 class="font-serif font-bold text-sm text-cocoa-ink">Tasmi' Al-Qur'an 9 Juz</h4>
+<p class="text-xs text-cocoa-muted mt-1 leading-relaxed">
+            Successfully completed public continuous recitation (Tasmi' Bil Ghaib) 9 Juz Al-Qur'an with exemplary tajweed and mutqin memory at PPI 67 Benda.
+          </p>
+<div class="mt-4 pt-2 border-t border-stone-200 text-[10px] font-mono text-cocoa-muted uppercase">
+            TAHFIDZ MILESTONE · 2024
+          </div>
+</div>
+<!-- Achievement 2: OSN Kimia Perak -->
+<div class="relative bg-cream-paper rounded-xl p-5 shadow-paper border border-stone-200 transform rotate-1 hover:rotate-0 transition">
+<div class="washi-tape w-16 h-4 absolute -top-2 right-8"></div>
+<span class="text-2xl mb-2 block">🥈</span>
+<h4 class="font-serif font-bold text-sm text-cocoa-ink">Perak — OSN Bidang Kimia</h4>
+<p class="text-xs text-cocoa-muted mt-1 leading-relaxed">
+            Juara 2 Tingkat Nasional dalam ajang Olimpiade Sains Nasional (OSN) bidang Kimia. Demonstrating rigorous analytical chemistry aptitude.
+          </p>
+<div class="mt-4 pt-2 border-t border-stone-200 text-[10px] font-mono text-cocoa-muted uppercase">
+            NATIONAL LEVEL · 2024
+          </div>
+</div>
+<!-- Achievement 3: FSN Biologi Perak -->
+<div class="relative bg-cream-paper rounded-xl p-5 shadow-paper border border-stone-200 transform -rotate-1 hover:rotate-0 transition">
+<div class="washi-tape-polka w-16 h-4 absolute -top-2 left-8"></div>
+<span class="text-2xl mb-2 block">🥈</span>
+<h4 class="font-serif font-bold text-sm text-cocoa-ink">Perak — FSN Bidang Biologi</h4>
+<p class="text-xs text-cocoa-muted mt-1 leading-relaxed">
+            Juara 2 Tingkat Nasional Festival Sains Nasional (FSN) bidang Biologi jenjang SMA/MA sederajat.
+          </p>
+<div class="mt-4 pt-2 border-t border-stone-200 text-[10px] font-mono text-cocoa-muted uppercase">
+            NATIONAL LEVEL · 2024
+          </div>
+</div>
+<!-- Achievement 4: FSBN Matematika Perunggu -->
+<div class="relative bg-cream-paper rounded-xl p-5 shadow-paper border border-stone-200 transform rotate-1 hover:rotate-0 transition">
+<div class="washi-tape w-16 h-4 absolute -top-2 right-8"></div>
+<span class="text-2xl mb-2 block">🥉</span>
+<h4 class="font-serif font-bold text-sm text-cocoa-ink">Perunggu — FSBN Matematika</h4>
+<p class="text-xs text-cocoa-muted mt-1 leading-relaxed">
+            Juara 3 Festival Sains &amp; Budaya Nasional bidang Matematika tingkat SMA/MA.
+          </p>
+<div class="mt-4 pt-2 border-t border-stone-200 text-[10px] font-mono text-cocoa-muted uppercase">
+            NATIONAL LEVEL · 2024
+          </div>
+</div>
+<!-- Achievement 5: Finalis Biantara Sunda -->
+<div class="relative bg-cream-paper rounded-xl p-5 shadow-paper border border-stone-200 transform -rotate-1 hover:rotate-0 transition">
+<div class="washi-tape-stripes w-16 h-4 absolute -top-2 left-8"></div>
+<span class="text-2xl mb-2 block">🎙️</span>
+<h4 class="font-serif font-bold text-sm text-cocoa-ink">Finalis Biantara B. Sunda</h4>
+<p class="text-xs text-cocoa-muted mt-1 leading-relaxed">
+            Finalist in Sundanese Oratory (Biantara) Competition at the regional level, mastering articulation, undak-usuk basa, and vocal inflection.
+          </p>
+<div class="mt-4 pt-2 border-t border-stone-200 text-[10px] font-mono text-cocoa-muted uppercase">
+            REGIONAL LEVEL · 2024
+          </div>
+</div>
+<!-- Achievement 6: Kaligrafi & Cerdas Cermat -->
+<div class="relative bg-cream-paper rounded-xl p-5 shadow-paper border border-stone-200 transform rotate-1 hover:rotate-0 transition">
+<div class="washi-tape w-16 h-4 absolute -top-2 right-8"></div>
+<span class="text-2xl mb-2 block">🖋️</span>
+<h4 class="font-serif font-bold text-sm text-cocoa-ink">Juara 1 Kaligrafi &amp; LCC</h4>
+<p class="text-xs text-cocoa-muted mt-1 leading-relaxed">
+            Juara 1 Lomba Kaligrafi Al-Qur'an &amp; Juara 1 Lomba Cerdas Cermat (LCC) PAI tingkat santri se-Pesantren Persis Benda.
+          </p>
+<div class="mt-4 pt-2 border-t border-stone-200 text-[10px] font-mono text-cocoa-muted uppercase">
+            INSTITUTIONAL · 2019-2023
+          </div>
+</div>
+</div>
+</div>
+<!-- Scalloped Lace Divider -->
+<div class="absolute bottom-0 left-0 right-0 lace-divider-pink pointer-events-none"></div>
+</section>
+<!-- END: Honors & Achievements Section -->
+<!-- BEGIN: Contact & Thank You Footer Section -->
+<footer class="relative bg-fabric-blue-pattern pt-20 pb-16 px-4 md:px-8" id="contact">
+<div class="max-w-5xl mx-auto">
+<!-- Contact Cards & Closing Layout Matching Reference -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-16">
+<!-- Left Column: Contact Cards with Thai/English scrapbook format -->
+<div class="lg:col-span-7 space-y-4">
+<div class="flex items-center gap-3 mb-6">
+<!-- Ribbon Bow Icon -->
+<div class="w-10 h-10">
+<svg class="w-full h-full drop-shadow" viewBox="0 0 50 50">
+<path d="M25,22 C14,8 4,18 16,28 C22,30 25,25 25,22 Z" fill="#8A6F63"></path>
+<path d="M25,22 C36,8 46,18 34,28 C28,30 25,25 25,22 Z" fill="#8A6F63"></path>
+<circle cx="25" cy="23" fill="#6A5349" r="4"></circle>
+</svg>
+</div>
+<h3 class="font-calligraphy text-4xl sm:text-5xl text-cocoa-ink die-cut-sticker inline-block">
+              Let's Work Together
+            </h3>
+</div>
+<!-- Contact Row 1: WhatsApp -->
+<div class="flex items-center gap-2 sm:gap-4 bg-white/70 backdrop-blur-xs p-3 rounded-xl border border-white shadow-xs">
+<span class="w-24 sm:w-28 font-mono text-xs font-bold uppercase text-cocoa-ink bg-fabric-blue/30 px-2 py-1 rounded text-center">
+              WHATSAPP
+            </span>
+<span class="text-xs sm:text-sm font-semibold text-cocoa-ink flex-1 truncate">
+              0851-6363-2715
+            </span>
+<a class="bg-white border border-cocoa-ink/10 px-3 py-1 rounded-full text-xs font-bold text-cocoa-ink hover:bg-stone-50 transition shadow-xs" href="https://wa.me/6285163632715" rel="noopener noreferrer" target="_blank">
+              Chat ↗
+            </a>
+</div>
+<!-- Contact Row 2: Instagram -->
+<div class="flex items-center gap-2 sm:gap-4 bg-white/70 backdrop-blur-xs p-3 rounded-xl border border-white shadow-xs">
+<span class="w-24 sm:w-28 font-mono text-xs font-bold uppercase text-cocoa-ink bg-fabric-pink/40 px-2 py-1 rounded text-center">
+              INSTAGRAM
+            </span>
+<span class="text-xs sm:text-sm font-semibold text-cocoa-ink flex-1 truncate">
+              @_veiirrl
+            </span>
+<a class="bg-white border border-cocoa-ink/10 px-3 py-1 rounded-full text-xs font-bold text-cocoa-ink hover:bg-stone-50 transition shadow-xs" href="https://instagram.com/_veiirrl" rel="noopener noreferrer" target="_blank">
+              Follow ↗
+            </a>
+</div>
+<!-- Contact Row 3: Email -->
+<div class="flex items-center gap-2 sm:gap-4 bg-white/70 backdrop-blur-xs p-3 rounded-xl border border-white shadow-xs">
+<span class="w-24 sm:w-28 font-mono text-xs font-bold uppercase text-cocoa-ink bg-fabric-blue/30 px-2 py-1 rounded text-center">
+              EMAIL
+            </span>
+<span class="text-xs sm:text-sm font-semibold text-cocoa-ink flex-1 truncate">
+              mumtazaveiga@gmail.com
+            </span>
+<a class="bg-white border border-cocoa-ink/10 px-3 py-1 rounded-full text-xs font-bold text-cocoa-ink hover:bg-stone-50 transition shadow-xs" href="mailto:mumtazaveiga@gmail.com">
+              Send ↗
+            </a>
+</div>
+<!-- Contact Row 4: Campus -->
+<div class="flex items-center gap-2 sm:gap-4 bg-white/70 backdrop-blur-xs p-3 rounded-xl border border-white shadow-xs">
+<span class="w-24 sm:w-28 font-mono text-xs font-bold uppercase text-cocoa-ink bg-fabric-pink/40 px-2 py-1 rounded text-center">
+              CAMPUS
+            </span>
+<span class="text-xs sm:text-sm font-semibold text-cocoa-ink flex-1 truncate">
+              Institut Teknologi PLN · Jakarta Barat
+            </span>
+<span class="text-xs text-cocoa-muted font-mono">
+              Informatics '25
+            </span>
+</div>
+</div>
+<!-- Right Column: Polaroid with Tulips and Tape -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="relative w-64 sm:w-72">
+<!-- Flanking Tulips on bottom right -->
+<div class="absolute -bottom-8 -right-6 z-20 w-28">
+<svg class="w-full h-auto die-cut-sticker" viewBox="0 0 120 160">
+<path d="M60,150 Q60,90 70,50" fill="none" stroke="#7A9B76" stroke-width="3"></path>
+<path d="M50,55 C40,35 50,15 68,15 C85,15 95,35 85,55 C80,65 60,65 50,55 Z" fill="#F4BAC3"></path>
+</svg>
+</div>
+<div class="bg-white p-3.5 pb-8 rounded shadow-paper-deep border border-stone-200 transform rotate-3 hover:rotate-0 transition duration-300">
+<!-- Washi Tape -->
+<div class="washi-tape-polka w-20 h-5 absolute -top-2.5 right-6 z-10 transform rotate-6"></div>
+<div class="aspect-[4/5] bg-stone-100 rounded overflow-hidden">
+<img alt="Veiga Mumtaza El Rahma smiling" class="w-full h-full object-cover filter contrast-[1.03]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxCgEOPwcnf0FEaF8CtOfzDzMegxIvkruoGSRfVy4OjKsp0VOVSmhSJwtLYVOkBgkBgF26a8ORX6Gt_8iLrwZlR8WNPi-5Luq-KRAIbXSIzqTVOIaEGRrvNqQ15N5GJg37c6xvb5q40SoD1-ufOhfkeyK7Q27hXeQS6u2GI9RDoJ-FJVsKJ71Go-XJOVeb74M1LmMOR5V_rFx0j9RhknaUwouTjh4KSTGnnDVZ8BU">
+</div>
+<div class="text-center mt-3">
+<p class="font-script text-xl text-cocoa-ink">Veiga Mumtaza ✿</p>
+<p class="text-[10px] font-mono text-cocoa-muted uppercase tracking-widest">ready for your next project</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Centered Closing "Thank You" Big Die-Cut Sticker -->
+<div class="border-t-2 border-dashed border-white/60 pt-14 pb-8 text-center relative">
+<div class="relative inline-block my-4">
+<!-- Flanking Tulips Sticker Left -->
+<div class="absolute -left-12 sm:-left-20 -top-6 w-20 sm:w-28 pointer-events-none hidden xs:block">
+<svg class="w-full h-auto die-cut-sticker" viewBox="0 0 100 130">
+<path d="M50,120 Q50,70 60,35" fill="none" stroke="#7A9B76" stroke-width="3"></path>
+<path d="M45,45 C35,25 45,10 60,10 C75,10 85,25 75,45 Z" fill="#F4BAC3"></path>
+</svg>
+</div>
+<!-- Main Die Cut Script "Thank You" -->
+<div class="die-cut-sticker-thick">
+<h2 class="font-calligraphy text-6xl sm:text-8xl text-cocoa-ink leading-tight">
+              Thank
+            </h2>
+<h2 class="font-calligraphy text-6xl sm:text-8xl text-cocoa-ink -mt-4 sm:-mt-8 leading-tight">
+              You
+            </h2>
+</div>
+<!-- Flanking Tulips Sticker Right -->
+<div class="absolute -right-12 sm:-right-20 -top-6 w-20 sm:w-28 pointer-events-none hidden xs:block">
+<svg class="w-full h-auto die-cut-sticker" viewBox="0 0 100 130">
+<path d="M50,120 Q50,70 40,35" fill="none" stroke="#7A9B76" stroke-width="3"></path>
+<path d="M55,45 C65,25 55,10 40,10 C25,10 15,25 25,45 Z" fill="#F9CBD3"></path>
+</svg>
+</div>
+</div>
+<p class="font-serif italic text-sm text-cocoa-muted max-w-md mx-auto mt-4">
+          "Barangsiapa yang menempuh jalan untuk mencari ilmu, maka Allah akan memudahkan baginya jalan menuju surga."
+        </p>
+<!-- Copyright & Tagline -->
+<div class="mt-8 text-xs font-mono text-cocoa-muted tracking-wider">
+<p>© 2026 VEIGA MUMTAZA EL RAHMA · CRAFTED WITH LOVE &amp; PAPER CRAFT AESTHETICS</p>
+<p class="text-[10px] mt-1 text-cocoa-muted/80">INFORMATICS ENGINEERING · INSTITUT TEKNOLOGI PLN</p>
+</div>
+</div>
+</div>
+<!-- Scalloped Lace at Very Bottom -->
+<div class="absolute bottom-0 left-0 right-0 lace-divider pointer-events-none"></div>
+</footer>
+<!-- END: Contact & Thank You Footer Section -->
+<!-- BEGIN: Interactive Back To Top and Smooth Scroll Helper -->
+<script data-purpose="scrapbook-interaction">
+    document.addEventListener('DOMContentLoaded', () => {
+      // Smooth scroll adjustment for fixed nav
+      const links = document.querySelectorAll('a[href^="#"]');
+      links.forEach(link => {
+        link.addEventListener('click', function(e) {
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            e.preventDefault();
+            const navOffset = 70;
+            const elementPosition = targetElement.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - navOffset;
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+<!-- END: Interactive Back To Top and Smooth Scroll Helper -->
+
+
+</body></html>

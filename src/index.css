@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@theme {
+  --color-fabric-blue: #B4C3CE;
+  --color-fabric-blue-dark: #9CB0BD;
+  --color-fabric-pink: #D5BDC1;
+  --color-fabric-pink-dark: #C5A8AD;
+  --color-cream-paper: #F7F1EB;
+  --color-cream-paper-card: #FAF6F1;
+  --color-cocoa-ink: #5A4641;
+  --color-cocoa-muted: #7D6964;
+  --color-ribbon-blue: #9CB4C4;
+  --color-ribbon-brown: #8A6F63;
+  --color-sticker-white: #FFFFFF;
+  --color-card-pink: #E9D7DA;
+  --color-card-blue: #D1DDE5;
+
+  --font-script: "Sacramento", "Great Vibes", cursive;
+  --font-calligraphy: "Great Vibes", cursive;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --shadow-paper: 0 8px 24px -4px rgba(90, 70, 65, 0.16), 0 2px 6px -1px rgba(90, 70, 65, 0.1);
+  --shadow-paper-deep: 0 18px 38px -6px rgba(90, 70, 65, 0.22), 0 4px 12px -2px rgba(90, 70, 65, 0.14);
+  --shadow-sticker: 0 4px 14px rgba(90, 70, 65, 0.15);
+  --shadow-polaroid: 0 10px 25px -3px rgba(90, 70, 65, 0.2);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #B4C3CE;
+    color: #5A4641;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #5A4641;
+    overflow-x: hidden;
+  }
+}
+
+/* Subtle linen/canvas fabric weave overlay */
+.bg-fabric-blue-pattern {
+  background-color: #B4C3CE;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 0),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.05) 50%, transparent 50%),
+    linear-gradient(90deg, rgba(90, 70, 65, 0.04) 50%, transparent 50%);
+  background-size: 16px 16px, 4px 4px, 4px 4px;
+}
+
+.bg-fabric-pink-pattern {
+  background-color: #D5BDC1;
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 0),
+    linear-gradient(0deg, rgba(255, 255, 255, 0.06) 50%, transparent 50%),
+    linear-gradient(90deg, rgba(90, 70, 65, 0.04) 50%, transparent 50%);
+  background-size: 16px 16px, 4px 4px, 4px 4px;
+}
+
+.paper-texture {
+  background-color: #F7F1EB;
+  background-image: radial-gradient(rgba(90, 70, 65, 0.03) 1px, transparent 0);
+  background-size: 8px 8px;
+}
+
+/* Die-Cut White Sticker Outline Effect */
+.die-cut-sticker {
+  filter:
+    drop-shadow(0 2px 0 #FFFFFF)
+    drop-shadow(0 -2px 0 #FFFFFF)
+    drop-shadow(2px 0 0 #FFFFFF)
+    drop-shadow(-2px 0 0 #FFFFFF)
+    drop-shadow(2px 2px 0 #FFFFFF)
+    drop-shadow(-2px -2px 0 #FFFFFF)
+    drop-shadow(0 6px 10px rgba(90, 70, 65, 0.22));
+}
+
+.die-cut-sticker-thick {
+  filter:
+    drop-shadow(0 4px 0 #FFFFFF)
+    drop-shadow(0 -4px 0 #FFFFFF)
+    drop-shadow(4px 0 0 #FFFFFF)
+    drop-shadow(-4px 0 0 #FFFFFF)
+    drop-shadow(3px 3px 0 #FFFFFF)
+    drop-shadow(-3px -3px 0 #FFFFFF)
+    drop-shadow(0 8px 14px rgba(90, 70, 65, 0.25));
+}
+
+/* Washi Tape Strips */
+.washi-tape {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 1px 4px rgba(90, 70, 65, 0.15);
+  border-left: 2px dashed rgba(90, 70, 65, 0.2);
+  border-right: 2px dashed rgba(90, 70, 65, 0.2);
+}
+
+.washi-tape-polka {
+  background-color: rgba(255, 255, 255, 0.85);
+  background-image: radial-gradient(#B4C3CE 20%, transparent 20%);
+  background-size: 6px 6px;
+  box-shadow: 0 2px 5px rgba(90, 70, 65, 0.14);
+}
+
+.washi-tape-stripes {
+  background: repeating-linear-gradient(
+    -45deg,
+    rgba(255, 255, 255, 0.88),
+    rgba(255, 255, 255, 0.88) 6px,
+    rgba(213, 189, 193, 0.52) 6px,
+    rgba(213, 189, 193, 0.52) 12px
+  );
+  box-shadow: 0 2px 5px rgba(90, 70, 65, 0.14);
+}
+
+/* Envelope triangular flaps */
+.envelope-top-triangle {
+  width: 0;
+  height: 0;
+  border-left: 170px solid transparent;
+  border-right: 170px solid transparent;
+  border-top: 100px solid #EFE4D8;
+  filter: drop-shadow(0 4px 6px rgba(90, 70, 65, 0.08));
+}
+
+@media (max-width: 640px) {
+  .envelope-top-triangle {
+    border-left-width: 120px;
+    border-right-width: 120px;
+    border-top-width: 72px;
+  }
+}
+
+/* Scalloped Lace Edge Dividers */
+.lace-divider {
+  height: 28px;
+  width: 100%;
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  background-size: 32px 28px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 28'%3E%3Cpath d='M0,28 L0,12 C4,12 6,4 16,4 C26,4 28,12 32,12 L32,28 Z' fill='%23FFFFFF' opacity='0.92'/%3E%3Ccircle cx='16' cy='12' r='2' fill='%23B4C3CE' opacity='0.5'/%3E%3Ccircle cx='8' cy='18' r='1.5' fill='%23B4C3CE' opacity='0.4'/%3E%3Ccircle cx='24' cy='18' r='1.5' fill='%23B4C3CE' opacity='0.4'/%3E%3C/svg%3E");
+}
+
+.lace-divider-pink {
+  height: 28px;
+  width: 100%;
+  background-repeat: repeat-x;
+  background-position: center bottom;
+  background-size: 32px 28px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 28'%3E%3Cpath d='M0,28 L0,12 C4,12 6,4 16,4 C26,4 28,12 32,12 L32,28 Z' fill='%23FFFFFF' opacity='0.92'/%3E%3Ccircle cx='16' cy='12' r='2' fill='%23D5BDC1' opacity='0.6'/%3E%3Ccircle cx='8' cy='18' r='1.5' fill='%23D5BDC1' opacity='0.5'/%3E%3Ccircle cx='24' cy='18' r='1.5' fill='%23D5BDC1' opacity='0.5'/%3E%3C/svg%3E");
+}
+
+/* Notebook Lined Paper effect */
+.lined-paper {
+  background-color: #FAF6F0;
+  background-image: linear-gradient(#E8DED2 1px, transparent 1px);
+  background-size: 100% 28px;
+  line-height: 28px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
